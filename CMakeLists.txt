@@ -88,6 +88,7 @@ set(ARDUINO_ALL_LIBRARIES
   LittleFS
   NetBIOS
   Network
+  NetworkClientSecure
   PPP
   Preferences
   SD_MMC
@@ -172,6 +173,13 @@ set(ARDUINO_LIBRARY_Network_SRCS
   libraries/Network/src/NetworkClient.cpp
   libraries/Network/src/NetworkServer.cpp
   libraries/Network/src/NetworkUdp.cpp)
+  
+set(ARDUINO_LIBRARY_NetworkClientSecure_SRCS
+  libraries/NetworkClientSecure/src/NetworkClientSecure.cpp
+  libraries/NetworkClientSecure/src/NetworkClientSecure.h
+  libraries/NetworkClientSecure/src/ssl_client.cpp
+  libraries/NetworkClientSecure/src/ssl_client.h
+  libraries/NetworkClientSecure/src/WiFiClientSecure.h)
 
 set(ARDUINO_LIBRARY_WiFi_SRCS
   libraries/WiFi/src/WiFiAP.cpp
